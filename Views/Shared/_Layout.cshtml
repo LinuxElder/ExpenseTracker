@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ExpenseTracker</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <header>
+        <div class="w-full py-4 border-b border-slate-900/10 bg-[#0B243A] lg:px-8 lg:border-0 dark:border-slate-300/10 mx-0 lg:mx-0">
+            <nav>
+                <h1 class="text-2xl font-bold underline text-gray-200 text-center hover:text-sky-500">
+                   Expense Tracker
+                </h1>
+
+            </nav>
+        </div>
+    </header>
+    <div class="container h-screen">
+
+       
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="w-full py-4 border-b border-slate-900/10 bg-[#0B243A] lg:px-8 lg:border-0 dark:border-slate-300/10 mx-0 lg:mx-0">
+       
+    </footer>
+   
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
